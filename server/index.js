@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-const PORT = 3000;
+const PORT = 4200;
 
 // Store room information (name and password)
 const rooms = new Map();

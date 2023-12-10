@@ -1,7 +1,7 @@
 import { ImageBackground, StatusBar, StyleSheet, Text, View, Image, Button, Pressable } from 'react-native'
 import React from 'react'
 import { Colors } from '../constants/Colors'
-
+import { BlurView } from "@react-native-community/blur";
 const MainScreen = ({ navigation }) => {
   return (
     <View style={styles.main_screen}>
@@ -25,6 +25,12 @@ const MainScreen = ({ navigation }) => {
             style={styles.button}>
             <Text style={styles.btn_text}>Join Room</Text>
           </Pressable>
+          <BlurView
+        style={styles.absolute}
+        blurType="light"
+        blurAmount={10}
+        reducedTransparencyFallbackColor="white"
+      />
         </View>
       </View>
     </View>

@@ -4,7 +4,7 @@ import { Colors } from '../constants/Colors'
 import { TextInput } from 'react-native-gesture-handler'
 import io from 'socket.io-client';
 
-const socket = io('http://192.168.219.86:3000');
+const socket = io('https://chatroom-backend-4h6u.onrender.com');
 const CreateRoom = ({navigation}) => {
 
 

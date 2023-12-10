@@ -16,6 +16,7 @@ const StackNavigator = () => {
     }
     return (
             <Stack.Navigator>
+                {_addScreen('SplashScreen')}
                 {_addScreen('MainScreen')}
                 {_addScreen('ChatRoom')}
                 {_addScreen('CreateRoom')}

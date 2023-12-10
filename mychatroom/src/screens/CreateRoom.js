@@ -29,11 +29,11 @@ const CreateRoom = ({navigation}) => {
     <View style={styles.main_screen}>
       <StatusBar barStyle="light-content" backgroundColor={Colors.Primary} translucent={false} />
 
-      <Image
+      {/* <Image
         source={require('../assets/Images/background_img_new.jpg')}
         style={styles.back_image}
         resizeMode='cover'
-      />
+      /> */}
       <View style={styles.container}>
         <View>
           <TextInput
@@ -73,8 +73,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   container: {
-    backgroundColor: Colors.Primary,
-    width: "95%", alignItems: 'center', justifyContent: "space-around", flex: 1, marginTop: 150, alignSelf: 'flex-end', borderTopLeftRadius: 100, borderBottomLeftRadius: 20, elevation: 20
+    backgroundColor: Colors.Black,
+    width: "95%", alignItems: 'center', justifyContent: "space-around", flex: 1, marginTop: 10, alignSelf: 'flex-end', borderTopLeftRadius: 100, borderBottomLeftRadius: 50,marginBottom:20
   },
   text_input: {
     backgroundColor: Colors.Black,
